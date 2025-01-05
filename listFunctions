@@ -1,0 +1,28 @@
+ls=[25,24,95,65,6,58,56,58,65]
+
+ls.append(29)
+print(ls)
+ls.insert(1,5)
+print(ls)
+
+ls2=ls.copy()
+print("List 1 : ",ls)
+print("List 2 : ",ls2)
+
+ls.pop()#delete last
+print(ls)
+ls.pop(3)#delete 3rd element
+print(ls)
+ls.remove(25)#delete 25
+print(ls)
+
+ls.sort()
+print(ls)
+ls.reverse()
+print(ls)
+
+print("Index of 58 :",ls.index(58))
+print("Index of 65 :",ls.count(65))
+
+ls.clear()
+print(ls)

@@ -1,0 +1,13 @@
+my_tuple = (1,4,3,4,5,1,2,3,5)
+print(len(my_tuple))
+print(max(my_tuple))
+print(min(my_tuple))
+print(sorted(my_tuple))
+print(sum(my_tuple))
+print(my_tuple.count(3))
+print(my_tuple.index(4))
+
+a=list(map(lambda x: x**2,my_tuple))
+print(a)
+mytup=tuple(a)
+print(mytup)

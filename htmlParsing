@@ -1,0 +1,36 @@
+from bs4 import BeautifulSoup
+
+html="""
+<html>
+<head>
+    <title>Html parsing example</title>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <h2>Thii is h2 heading</h2>
+    <p>This is paragraph </p>
+    <p>This is second paragraph </p>
+    <ul>
+        <li>This is list item1</li>
+        <li>This is list item2</li>
+    </ul>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(html,"html.parser")
+
+title = soup.title.string
+print(title)
+
+head1= soup.find("h1")
+print(head1.text)
+
+head2= soup.find("h2")
+print(head2.text)
+
+for p in soup.find_all("p"):
+    print(p.text)
+
+for ls in soup.find_all("ls"):
+    print(ls.text)

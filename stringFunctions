@@ -1,0 +1,23 @@
+# string casting
+i=24685
+s=str(i)
+print(s)
+print(type(s))
+
+strr = "I Love Python"
+# string slicing 
+print(strr[5:])
+print(strr[:10])
+print(strr[5:10])
+
+#string functions
+print(strr.upper())
+print(strr.lower())
+print(strr.swapcase())
+print(strr.title())
+print(strr.capitalize())
+print(strr.index("t"))
+print(strr.find("e"))
+print(strr.replace("Python","Java"))
+print(strr.split(" "))
+print(strr+" ".join("yuf"))  
