@@ -1,0 +1,46 @@
+from tkinter import *
+root=Tk()
+root.geometry("600x400")
+root.title("GUI Application")
+
+def submit():
+    top=Toplevel(root,bg="skyblue")
+    top.title("Student data")
+    top.geometry("600x500")
+    lbl=Label(top,text=f"Student Name : {entName.get()}",font=("Times new roman", 18))
+    lbl.place(x=100,y=100)
+    lbl2=Label(top,text=f"Student Roll no:{entRoll.get()}",font=("Times new roman", 18))
+    lbl2.place(x=100,y=150)
+    lbl3=Label(top,text=f"Course : {entCourse.get()}",font=("Times new roman", 18))
+    lbl3.place(x=100,y=200)
+    lbl4=Label(top,text=f"Address : {txtAdd.get(1)}",font=("Times new roman", 18))
+    lbl4.place(x=100,y=250)
+
+namelbl=Label(root,text="Name : ",font=("Times new roman", 18))
+namelbl.grid(row=1,column=1)
+entName=Entry(root,width=20,font=("Times new roman", 18))
+entName.grid(row=1,column=3)
+
+rolllbl=Label(root,text="Roll no : ",font=("Times new roman", 18))
+rolllbl.grid(row=3,column=1)
+entRoll=Entry(root,width=20,font=("Times new roman", 18))
+entRoll.grid(row=3,column=3)
+
+courselbl=Label(root,text="Course : ",font=("Times new roman", 18))
+courselbl.grid(row=5,column=1)
+entCourse=Entry(root,width=20,font=("Times new roman", 18))
+entCourse.grid(row=5,column=3)
+
+addlbl=Label(root,text="Address : ",font=("Times new roman", 18))
+addlbl.grid(row=7,column=1)
+txtAdd=Text(root,font=("Times new roman", 18),width=20,height=3)
+txtAdd.grid(row=7,column=3)
+
+btn=Button(root,text="Submit",font=("Times new roman", 18),bg="green",command=submit)
+btn.grid(row=8,column=1)
+
+
+
+
+root.resizable()
+root.mainloop()
