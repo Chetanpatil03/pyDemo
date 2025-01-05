@@ -24,3 +24,9 @@ print(d2)
 
 d2.clear()
 print(d2)
+
+marks = [19,18,19,17]
+stud = ["Chetan","Prafulla","Bhavesh","Prakash"]
+
+dic = {stud[i]:marks[i] for i in range(len(stud))}
+print(dic)
