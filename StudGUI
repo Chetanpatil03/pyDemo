@@ -4,7 +4,7 @@ root.geometry("600x400")
 root.title("GUI Application")
 
 def submit():
-    top=Toplevel(root,bg="skyblue")
+    top=Toplevel(root,bg="yellow")
     top.title("Student data")
     top.geometry("600x500")
     lbl=Label(top,text=f"Student Name : {entName.get()}",font=("Times new roman", 18))
